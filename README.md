@@ -4,15 +4,15 @@ Este repositório apresenta a implementação computacional da metodologia descr
 
 O objetivo da análise foi identificar padrões linguísticos relacionados a estresse ocupacional, ansiedade, sobrecarga, frustração, exaustão e burnout em comentários publicados por usuários de comunidades online da área de tecnologia.
 
-Base de análise
+## Base de análise
 
 A análise utilizou dados históricos do Reddit, organizados a partir de arquivos públicos derivados do Pushshift Reddit Dataset e complementados por acesso histórico para o período mais recente.
 
 A amostra contém 6.000 comentários, distribuídos igualmente entre três comunidades:
 
-r/programming: 2.000 comentários;
-r/cscareerquestions: 2.000 comentários;
-r/devops: 2.000 comentários.
+* `r/programming`: 2.000 comentários;
+* `r/cscareerquestions`: 2.000 comentários;
+* `r/devops`: 2.000 comentários.
 
 O recorte temporal compreende o período de 2021 a 2024.
 
