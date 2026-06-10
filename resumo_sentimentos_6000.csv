@@ -1,0 +1,13 @@
+﻿subreddit,classe_sentimento,quantidade,percentual
+cscareerquestions,negativo,459,22.95
+cscareerquestions,neutro,283,14.15
+cscareerquestions,positivo,1258,62.9
+devops,negativo,402,20.1
+devops,neutro,336,16.8
+devops,positivo,1262,63.1
+programming,negativo,566,28.3
+programming,neutro,343,17.15
+programming,positivo,1091,54.55
+TOTAL,negativo,1427,23.78
+TOTAL,neutro,962,16.03
+TOTAL,positivo,3611,60.18
