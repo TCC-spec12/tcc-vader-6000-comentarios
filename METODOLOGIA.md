@@ -2,46 +2,43 @@
 
 ## Fonte e recorte dos dados
 
-A análise utilizou comentários públicos de três comunidades do Reddit relacionadas à área de tecnologia:
+A etapa empírica utilizou dados históricos públicos do Reddit relacionados ao Pushshift Reddit Dataset.
 
-- `r/programming`;
-- `r/cscareerquestions`;
-- `r/devops`.
+Foram consideradas as comunidades `r/programming`, `r/cscareerquestions` e `r/devops`, no período de 2021 a 2024.
 
-O recorte temporal compreendeu o período de 2021 a 2024. A amostra final foi composta por 6.000 comentários, distribuídos igualmente entre as três comunidades, com 2.000 comentários por subreddit.
+A amostra final foi composta por 6.000 comentários, distribuídos igualmente entre as três comunidades, com 2.000 comentários por subreddit.
 
-## Coleta e seleção
+## Seleção e preparação
 
-A coleta foi realizada por meio de acesso histórico aos dados do Reddit. Após a obtenção dos registros, foram removidos comentários apagados, removidos, duplicados ou sem conteúdo textual suficiente.
+Foram considerados comentários com conteúdo textual disponível, pertencentes ao período e às comunidades definidas no estudo.
 
-Em seguida, foi realizada uma seleção aleatória e equilibrada de 2.000 comentários por comunidade, totalizando 6.000 textos.
+O procedimento de preparação incluiu:
 
-## Análise de sentimentos
+* exclusão de comentários apagados ou removidos;
+* eliminação de registros duplicados;
+* verificação do período de publicação;
+* organização por comunidade;
+* anonimização dos identificadores;
+* seleção equilibrada dos comentários.
 
-A análise foi realizada com o VADER (*Valence Aware Dictionary and sEntiment Reasoner*), ferramenta de análise de sentimentos adequada a textos curtos e informais de redes sociais.
+## Aplicação do VADER
 
-Para cada comentário, foram calculados:
+A análise de sentimentos foi realizada com o método VADER, desenvolvido para avaliar a polaridade emocional em textos curtos e informais.
 
-- `neg`: proporção de sentimento negativo;
-- `neu`: proporção de conteúdo neutro;
-- `pos`: proporção de sentimento positivo;
-- `compound`: pontuação geral do sentimento.
+Para cada comentário, foram produzidos os indicadores `neg`, `neu`, `pos` e `compound`.
 
-A classificação final considerou:
+A classificação final adotou:
 
-- `compound <= -0,05`: negativo;
-- `-0,05 < compound < 0,05`: neutro;
-- `compound >= 0,05`: positivo.
+* `compound <= -0,05`: negativo;
+* `-0,05 < compound < 0,05`: neutro;
+* `compound >= 0,05`: positivo.
 
-## Resultados gerados
+## Análise complementar
 
-- `resultados_vader_6000.csv`;
-- `resumo_sentimentos_6000.csv`;
-- `frequencia_termos_6000.csv`;
-- `grafico_sentimentos_6000.png`;
-- `grafico_termos_6000.png`;
-- `registro_execucao_6000.json`.
+Além da polaridade geral, foram observadas expressões associadas a estresse, sobrecarga, ansiedade, exaustão, prazos, incidentes técnicos e burnout.
 
-## Observação de reprodutibilidade
+A frequência dos termos foi utilizada como apoio à interpretação qualitativa dos padrões linguísticos encontrados.
 
-Esta execução representa uma reconstrução técnica posterior da metodologia descrita no TCC. Ela mantém o mesmo recorte de comunidades, período, quantidade de comentários e aplicação do VADER, mas não garante que os 6.000 comentários sejam exatamente os mesmos da amostra original, que não foi preservada.
+## Limitações
+
+O VADER identifica polaridade linguística e não realiza diagnóstico psicológico. Os resultados devem ser interpretados como tendências presentes nos textos analisados.
