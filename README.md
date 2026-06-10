@@ -61,9 +61,7 @@ Também foram observados termos como `stress`, `burnout`, `deadline`, `overworke
 
 ## Reprodutibilidade
 
-O notebook disponibilizado permite verificar os critérios empregados, executar novamente os procedimentos e gerar os arquivos de resultados.
-
-A análise mantém o recorte metodológico apresentado no trabalho: comunidades de tecnologia, período de 2021 a 2024, amostra de 6.000 comentários e aplicação do método VADER.
+O notebook permite consultar o procedimento utilizado, verificar os critérios de seleção e executar novamente a análise. A execução mantém o recorte metodológico apresentado no trabalho: comunidades de tecnologia, período de 2021 a 2024, amostra de 6.000 comentários e aplicação do método VADER.
 
 ## Referência
 
