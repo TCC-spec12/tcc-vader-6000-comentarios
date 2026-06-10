@@ -8,6 +8,5 @@
   },
   "periodo": "2021-01-01 a 2024-12-31",
   "metodo": "VADER",
-  "fonte_dos_dados": "Pushshift Reddit Dataset"
-"fonte_execucao": "Pushshift Reddit Dataset"
+  "fonte_dos_dados": "Dados históricos públicos do Reddit relacionados ao Pushshift Reddit Dataset"
 }
